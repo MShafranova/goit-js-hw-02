@@ -1,9 +1,10 @@
 function checkForSpam(message) {
-    const spamWord = 'spam';
-    const spamWord2 = 'sale';
-    let messageLower = message.toLowerCase();
-    const result = messageLower.includes(spamWord)||messageLower.includes(spamWord2);
-return result;
+  const spamWord = "spam";
+  const spamWord2 = "sale";
+  let messageLower = message.toLowerCase();
+  const result =
+    messageLower.includes(spamWord) || messageLower.includes(spamWord2);
+  return result;
 }
 console.log(checkForSpam("Latest technology news")); // false
 console.log(checkForSpam("JavaScript weekly newsletter")); // false
